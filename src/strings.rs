@@ -3,32 +3,32 @@
 
 pub fn run() {
     let hello = "Hello";  // primitve not growable
-    let mut newHello = String::from("hello again "); // Growable - mutable 
+    let mut new_hello = String::from("hello again "); // Growable - mutable 
 
     // Get length
-    println!("Length: {}", newHello.len());
+    println!("Length: {}", new_hello.len());
 
     // Push - add to string  - only for 'char' one character  
-    newHello.push('W');
+    new_hello.push('W');
 
     // Push whole words
-    newHello.push_str("orld!");
-    println!("{}", newHello);
+    new_hello.push_str("orld!");
+    println!("{}", new_hello);
 
     // Capacity 
-    println!("Capacity: {}", newHello.capacity()); // Capacity: 22
+    println!("Capacity: {}", new_hello.capacity()); // Capacity: 22
 
     // Check if empty 
-    println!("Is empty: {}", newHello.is_empty()); // Is empty: false
+    println!("Is empty: {}", new_hello.is_empty()); // Is empty: false
 
     // Contains
-    println!("Contains 'World' {}", newHello.contains("World")); // Contains 'World' true
+    println!("Contains 'World' {}", new_hello.contains("World")); // Contains 'World' true
 
     // Replace 
-    println!("Replace: {}", newHello.replace("World", "There")); // Replace: hello againThere!
+    println!("Replace: {}", new_hello.replace("World", "There")); // Replace: hello againThere!
 
     // Loop through string by whitespace 
-    for word in newHello.split_whitespace() {
+    for word in new_hello.split_whitespace() {
         println!("{}", word);
     }
 
