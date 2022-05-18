@@ -37,4 +37,10 @@ pub fn run() {
     for x in numbers.iter() {
         println!("Number: {}", x);
     }
+
+    // Loop and Mutate values 
+    for x in numbers.iter_mut() {
+        *x *= 2; // multiplied by 2 
+    }
+    println!("Numbers Vex: {:?}", numbers); // Numbers Vex: [2, 4, 40, 8, 10]
 }
